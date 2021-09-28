@@ -1,0 +1,87 @@
+body {
+    display: flex;
+}
+
+.game-container {
+    width: 1200px;
+    height: 730px;
+    position: absolute;
+    left: 80px;
+}
+
+.border-left {
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+}
+
+.border-right {
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    left: 580px;
+}
+
+.border-top {
+    width: 660px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    top: -40px;
+}
+
+.sky {
+    background-color: lightblue;
+    width: 1200px;
+    height: 580px;
+    position: absolute;
+}
+
+.ground {
+    background-color: brown;
+    width: 1200px;
+    height: 150px;
+    position: absolute;
+    top: 580px;
+    z-index: +1;
+}
+
+.player {
+    background-image: url('player.png');
+    position: absolute;
+    width: 55px;
+    height: 75px;
+    background-size: contain;
+    z-index: +3;
+}
+
+.enemy {
+    background-image: url('martin.png');
+    width: 90px;
+    height: 100px;
+    position: absolute;
+    background-size: contain;
+}
+
+.bullet {
+    background-image: url('bomb.png');
+    position: absolute;
+    width: 23px;
+    height: 25px;
+    z-index: +3;
+    background-size: contain;
+}
+
+.boom {
+    background-image: url('boom.png');
+    position: absolute;
+    width: 100px;
+    height: 93px;
+    z-index: +3;
+    background-size: contain;
+}
