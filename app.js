@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
         player.style.bottom = playerBotton + 'px';
         player.style.left = playerLeft + 'px';
     }
-    let gametimerId = setInterval(startGame, 20)
+    let gametimerId = setInterval(startGame, 20);
 
-    const enemysInScreen = []
+    const enemysInScreen = [];
 
     function generateEnemy() {
         let enemyLeft = 1200;
@@ -49,11 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     generateEnemy();
 
-    const bulletInScreen = []
+    const bulletInScreen = [];
 
     function shoot() {
         if (bulletInScreen.length == 5) {
-            console.log("hola")
+            console.log("hola");
             //ruido de arma vacia poner aqui
             return
         }
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bullet.style.left = bulletLeft + 'px';
             if (bulletBottom < 145) {
                 clearInterval(moveBulletInterval);
-                bulletExplode(bullet)
+                bulletExplode(bullet);
             } 
             bulletBottom -= 0.1;
             bullet.style.bottom = bulletBottom + 'px';
